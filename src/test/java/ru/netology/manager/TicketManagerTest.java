@@ -44,7 +44,7 @@ class TicketManagerTest {
     @Test
     public void shouldFindMoreOneTicket() {
 
-        Ticket[] expected = new Ticket[]{first, seventh};
+        Ticket[] expected = new Ticket[]{seventh, first};
         Ticket[] actual = manager.searchBy("VKO", "LED");
 
         assertArrayEquals(expected, actual);
